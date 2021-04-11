@@ -7,12 +7,12 @@ func greet() -> String {
 
 struct ContentView: View {
     var body: some View {
-        Text(greet() + "bro")
+        Text(greet() + "bro").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().foregroundColor(.green)
     }
 }
